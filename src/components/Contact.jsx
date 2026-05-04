@@ -13,8 +13,7 @@ function Contact() {
     const [statusMessage, setStatusMessage] = useState('')
 
     useEffect(() => {
-        // Inicializar EmailJS com sua PUBLIC_KEY
-        emailjs.init('cwd1aL47Nan6fXbht')
+        emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
     }, [])
 
     const handleChange = (e) => {
@@ -32,14 +31,14 @@ function Contact() {
 
         try {
             const result = await emailjs.send(
-                'service_d57y0zm',
-                'template_95utmwh',
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                 {
                     from_name: formData.name,
                     from_email: formData.email,
                     subject: formData.subject,
                     message: formData.message,
-                    to_email: 'maxwellcmoura@gmail.com'
+                    to_email: import.meta.env.VITE_CONTACT_EMAIL
                 }
             )
 
