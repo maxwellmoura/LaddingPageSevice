@@ -23,7 +23,8 @@ function Footer() {
             <h3>Redes Sociais</h3>
             <ul>
               <li><a href="https://github.com/maxwellmoura" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="https://linkedin.com/in/maxwellmoura" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>              
+              <li><a href="https://www.linkedin.com/in/maxwell-moura-80a33a6b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/max.frontendzin/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             </ul>
           </div>
         </div>

@@ -78,7 +78,8 @@ function Contact() {
                             <h3>🔗 Redes Sociais</h3>
                             <div className="social-links">
                                 <a href="https://github.com/maxwellmoura" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href="https://linkedin.com/in/maxwellmoura" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/maxwell-moura-80a33a6b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <a href="https://www.instagram.com/max.frontendzin/" target="_blank" rel="noopener noreferrer">Instagram</a>
                             </div>
                         </div>
                     </div>
