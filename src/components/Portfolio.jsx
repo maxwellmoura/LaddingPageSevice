@@ -44,7 +44,7 @@ function Portfolio() {
         </p>
 
         <div className="portfolio-grid">
-          {projects.map((project, index) => (
+          {projects.slice(0, 3).map((project, index) => (
             <div key={index} className="project-card">
               <div className="project-content">
                 <h3>{project.title}</h3>
@@ -55,7 +55,22 @@ function Portfolio() {
                   ))}
                 </div>
               </div>
-              
+            </div>
+          ))}
+        </div>
+
+        <div className="portfolio-highlight">
+          {projects.slice(3).map((project, index) => (
+            <div key={index + 3} className="project-card">
+              <div className="project-content">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <div className="project-tech">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-badge">{tech}</span>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>

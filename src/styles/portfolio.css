@@ -74,8 +74,34 @@
   margin-left: 5px;
 }
 
+.portfolio-highlight {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-highlight .project-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+}
+
 @media (max-width: 768px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-highlight {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-highlight .project-card {
+    max-width: 100%;
   }
 }

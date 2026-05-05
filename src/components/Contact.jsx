@@ -83,61 +83,7 @@ function Contact() {
                             </div>
                         </div>
                     </div>
-
-                    <form className="contact-form" onSubmit={handleSubmit}>
-                        <div className="form-group">
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Seu Nome"
-                                value={formData.name}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Seu Email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <input
-                                type="text"
-                                name="subject"
-                                placeholder="Assunto"
-                                value={formData.subject}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <textarea
-                                name="message"
-                                placeholder="Sua Mensagem"
-                                rows="5"
-                                value={formData.message}
-                                onChange={handleChange}
-                                required
-                            ></textarea>
-                        </div>
-                        {statusMessage && (
-                            <div className={`status-message ${statusMessage.includes('✅') ? 'success' : 'error'}`}>
-                                {statusMessage}
-                            </div>
-                        )}
-                        <button 
-                            type="submit" 
-                            className="btn btn-primary"
-                            disabled={isLoading}
-                        >
-                            {isLoading ? 'Enviando...' : 'Enviar Mensagem'}
-                        </button>
-                    </form>
+                    
                 </div>
             </div>
         </section>
